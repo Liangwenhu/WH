@@ -1,0 +1,16 @@
+public class home3 {
+    public static void main(String[] args) {
+        for(int i=100;i<=999;i++) {
+            int k=i;
+            int ge_wei=k%10;
+            k=k/10;
+            int shi_wei=k%10;
+            k=k/10;
+            int bai_wei=k;
+            int sum=(int)(Math.pow(ge_wei,3)+Math.pow(shi_wei,3)+Math.pow(bai_wei,3));
+            if(sum==i) {
+                System.out.println(i+"\t");
+            }
+        }
+    }
+}
