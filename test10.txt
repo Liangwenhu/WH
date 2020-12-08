@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class home6 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("请输入第一个正整数m");
+        int m = scanner.nextInt();
+        int yue = 0;
+        if(m>0) {
+            System.out.println("请输入第二个正整数n");
+            int n = scanner.nextInt();
+            if (n > 0) {
+                int min = (m<=n)?m:n;
+                for(int i = 1;i<=min;i++) {
+                    if(m%i==0&&n%i==0) {
+                        yue = i;
+            }
+                }
+            }
+            System.out.println("最大公约数是"+yue);
+        } else {
+            System.out.println("输入不合法");
+        }
+      }
+    }
